@@ -22,9 +22,9 @@ flowchart TD
 ## Cadence
 | When | Command | Agent |
 |---|---|---|
-| Weekdays 08:30 HKT | `sync` then `morning brief` | inbox-triage → chief-of-staff |
+| Weekdays ~08:13 HKT (scheduled) | `sync` then `morning brief` + approval table | inbox-triage → chief-of-staff |
 | Two fixed weekly blocks | `career block` | career-agent |
-| Sunday | `weekly check-in` → `weekly review` | wellbeing-coach → chief-of-staff |
+| Sunday ~18:41 HKT (scheduled) | `weekly check-in` → `weekly review` | wellbeing-coach → chief-of-staff |
 | Monthly | `ledger review` | family-admin |
 | Quarterly | `refresh regulatory tracker` | brand-voice |
 

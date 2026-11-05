@@ -21,11 +21,22 @@ Main session = **chief-of-staff**. Read `.claude/agents/chief-of-staff.md` and t
 | Knowledge Framework | 40d0dffd685081859359e0f07f5595aa |
 | Digital Asset Research Tracker | 53e33a9d67154b0597fa2e187451cf9e |
 
+| ✅ Tasks & Deadlines (reminder list) | collection://0f33ab52-14ce-4991-9d0c-7b35793ab6df |
+
 ## Hard rules (all agents)
 1. **Drafts only.** Never send, archive, label or delete email, Slack, calendar or Drive items without explicit sign-off.
+   **Exception — confirm-then-write:** agents MAY create Google Calendar events and ✅ Tasks & Deadlines
+   reminders, but only via the Approval Gate below. Nothing is written before the user approves.
+
+## Approval Gate (calendar events + reminders)
+1. Propose a numbered table: `# | Type (Event/Reminder) | Title | Date/time (HKT) | Tickler | Priority | Area | Calendar alert | Source link`.
+2. Wait. Accept: `approve all` · `approve 1,3` · `edit 2: <field> → <value>` · `drop 4`. Re-show the table after every edit.
+3. Write only approved rows, exactly as edited. Reply with links to what was created.
+4. No reply → write nothing; carry proposals to the next brief as "Pending approval".
+5. Dedupe: check Calendar and Tasks & Deadlines for an existing match before proposing.
 2. **Deletions require confirmation.** No new Notion databases — extend existing ones (60-day system-build freeze, Mind Lab rec #4).
 3. **Privilege.** OSL / client matters: neutral titles (matter + action), no substantive content copied into Notion.
-4. **Deadlines are hard.** Any dated item → Google Calendar event + reminder; tickler 7–14 days ahead.
+4. **Deadlines are hard.** Any dated item → proposed Calendar event + Tasks & Deadlines reminder (Approval Gate); tickler 7–14 days ahead.
 5. **Authorship.** Markups and redlines are authored by "Legal".
 6. **Style.** BLUF + risk rating, bullets, 100–500 words, no filler. DD Month YYYY in prose; ISO in DB fields.
 7. **WIP limit of 3** active streams: Job (fixed) + max two of Career / Brand / Systems. Others parked.
