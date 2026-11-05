@@ -12,7 +12,7 @@ Execute ⚙️ Assistant Protocol §Command Centre sync exactly. Summary:
 5. **Priority**: Urgent = today · High = this week · Normal = dated · Low = undated.
 6. Multi-step items → sub-tasks via Parent item. Link to a Project where one fits.
 7. Dedupe on Source ID. On existing rows update Flow, Status, Last synced only. Never overwrite Notes, Priority or a manual Status unless a new reply arrives.
-8. Hard deadline → propose a Google Calendar event + ✅ Tasks & Deadlines reminder via the CLAUDE.md Approval Gate. Write only after approval.
+8. Hard deadline → propose a Google Calendar event + Apple Reminder (via ✅ Tasks & Deadlines flag) per the CLAUDE.md Approval Gate. Write only after approval.
 9. Privileged/OSL confidential → neutral title, no substantive content.
 10. Never send, archive, label or delete in Gmail/Drive.
 
